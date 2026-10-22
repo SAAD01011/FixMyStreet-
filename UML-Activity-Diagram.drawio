@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="27V0lihchyh-9uTG1ETg">
-    <mxGraphModel dx="3384" dy="2184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="875" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -48,14 +48,14 @@
         <mxCell id="e8" edge="1" parent="lane1" source="c5" style="edgeStyle=orthogonalEdgeStyle;" target="c6">
           <mxGeometry as="geometry" />
         </mxCell>
-        <mxCell id="c7" parent="lane1" style="rounded=1;whiteSpace=wrap;arcSize=20;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" value="Select Urgency Level&#xa;🟢Low  🟡Medium&#xa;🟠High  🔴Emergency" vertex="1">
-          <mxGeometry height="60" width="190" x="40" y="740" as="geometry" />
+        <mxCell id="c7" parent="lane1" style="rounded=1;whiteSpace=wrap;arcSize=20;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;" value="Select Urgency Level&#xa;🟢Low &#xa; 🟡Medium&#xa;🟠High&#xa; 🔴Emergency" vertex="1">
+          <mxGeometry height="80" width="190" x="40" y="750" as="geometry" />
         </mxCell>
         <mxCell id="e9" edge="1" parent="lane1" source="c6" style="edgeStyle=orthogonalEdgeStyle;" target="c7">
           <mxGeometry as="geometry" />
         </mxCell>
         <mxCell id="c8" parent="lane1" style="rounded=1;whiteSpace=wrap;arcSize=20;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" value="Click &quot;Submit&quot;" vertex="1">
-          <mxGeometry height="40" width="150" x="60" y="830" as="geometry" />
+          <mxGeometry height="40" width="150" x="60" y="880" as="geometry" />
         </mxCell>
         <mxCell id="e10" edge="1" parent="lane1" source="c7" style="edgeStyle=orthogonalEdgeStyle;" target="c8">
           <mxGeometry as="geometry" />

@@ -1,0 +1,250 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="hWWKOgkQUGns5Pwrqnfp">
+    <mxGraphModel dx="1413" dy="912" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\nskinparam shadowing false\nskinparam roundcorner 8\nskinparam defaultFontName \&quot;Segoe UI\&quot;\nskinparam defaultFontSize 11\n\ntitle &lt;size:16&gt;&lt;b&gt;FixMyStreet — Class-Responsibility-Collaborator (CRC) Cards&lt;/b&gt;&lt;/size&gt;\\n\n\nskinparam class {\n    HeaderBackgroundColor #2C3E50\n    BorderColor #2C3E50\n    ArrowColor #2C3E50\n    FontColor white\n    FontSize 12\n    FontStyle bold\n}\n\n&#39; ================= CRC CARD 1 =================\nclass \&quot;CRC Card: Citizen\&quot; as CRC1 &lt;&lt; (C,#2980B9) &gt;&gt; #EBF5FB {\n  &lt;color:#1A5276&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/color&gt; | &lt;color:#1A5276&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/color&gt;\n  --\n  • Register and log in to the system | Authentication System\n  • Submit complaint with photo, location, urgency | Complaint\n  • Track complaint real-time status | Complaint\n  • Provide rating and feedback on resolution | Feedback\n  • Reopen unresolved or poorly fixed issues | Complaint\n}\n\n&#39; ================= CRC CARD 2 =================\nclass \&quot;CRC Card: Complaint\&quot; as CRC2 &lt;&lt; (C,#D4AC0D) &gt;&gt; #FEFDE8 {\n  &lt;color:#7D6608&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/color&gt; | &lt;color:#7D6608&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/color&gt;\n  --\n  • Store issue details (category, photo, GPS, urgency) | Citizen\n  • Store auto-assigned priority (P1-P4) &amp; SLA deadline | System Rules Engine\n  • Maintain status progression (Submitted -&gt; Closed) | Dept Officer, Field Worker\n  • Record status change history with timestamps | Notification Service\n  • Link assigned department and field technician | Department, Field Worker\n  • Store resolution proof photo | Field Worker\n}\n\n&#39; ================= CRC CARD 3 =================\nclass \&quot;CRC Card: Department Officer\&quot; as CRC3 &lt;&lt; (C,#C0392B) &gt;&gt; #FDEDEC {\n  &lt;color:#78281F&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/color&gt; | &lt;color:#78281F&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/color&gt;\n  --\n  • Review incoming queue sorted by priority (P1 first) | Complaint\n  • Validate issue legitimacy and jurisdiction | Complaint\n  • Assign field worker to complaint | Field Worker, Complaint\n  • Set expected resolution deadline within SLA | Complaint\n  • Identify and merge duplicate complaints | Complaint\n}\n\n&#39; ================= CRC CARD 4 =================\nclass \&quot;CRC Card: Field Worker\&quot; as CRC4 &lt;&lt; (C,#8E44AD) &gt;&gt; #F4ECF7 {\n  &lt;color:#512E5F&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/color&gt; | &lt;color:#512E5F&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/color&gt;\n  --\n  • View assigned work orders ranked by priority | Complaint\n  • Navigate to physical issue location via GPS | Map Service\n  • Update task state to \&quot;In Progress\&quot; | Complaint\n  • Upload &#39;After&#39; photo resolution proof | Complaint\n  • Mark work order as \&quot;Resolved\&quot; | Complaint\n}\n\n&#39; ================= CRC CARD 5 =================\nclass \&quot;CRC Card: Feedback\&quot; as CRC5 &lt;&lt; (C,#27AE60) &gt;&gt; #EAFAF1 {\n  &lt;color:#145A32&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/color&gt; | &lt;color:#145A32&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/color&gt;\n  --\n  • Store citizen rating score (1 to 5 stars) | Citizen, Complaint\n  • Store critique and verification comments | Citizen\n  • Trigger transition: Confirm resolution (Closed) | Complaint\n  • Trigger transition: Dispute resolution (Reopened) | Complaint\n  • Feed satisfaction metrics into department KPIs | System Admin Analytics\n}\n\n&#39; Layout positioning\nCRC1 -[hidden]right- CRC2\nCRC2 -[hidden]right- CRC3\nCRC1 -[hidden]down- CRC4\nCRC4 -[hidden]right- CRC5\n\n@enduml\n&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="9QU13PjBE_a7U-jY-gem-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;FixMyStreet — Class-Responsibility-Collaborator (CRC) Cards&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;" plantUmlId="cltitle_2" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;FixMyStreet — Class-Responsibility-Collaborator (CRC) Cards&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;" id="9QU13PjBE_a7U-jY-gem-2">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="41" width="524.4516571428569" x="523.4291714285715" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="CRC Card: Citizen" plantUmlId="cls_3" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#EBF5FB;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Citizen" id="9QU13PjBE_a7U-jY-gem-3">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#EBF5FB;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="133.93999999999997" width="431.07" x="30" y="100.49" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="C" plantUmlId="ico_4" plantUmlBaseStyle="ellipse;fillColor=#2980B9;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-4">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="ellipse;fillColor=#2980B9;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+            <mxGeometry height="22" width="22" x="142.5336" y="5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_5" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-5">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="431.07" y="27" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_6" plantUmlBaseStyle="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" plantUmlBaseValue="" id="9QU13PjBE_a7U-jY-gem-6">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="8" width="431.07" y="43.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Register and log in to the system | Authentication System" plantUmlId="mb_7" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Register and log in to the system | Authentication System" id="9QU13PjBE_a7U-jY-gem-7">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="431.07" y="51.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Submit complaint with photo, location, urgency | Complaint" plantUmlId="mb_8" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Submit complaint with photo, location, urgency | Complaint" id="9QU13PjBE_a7U-jY-gem-8">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="431.07" y="67.97999999999999" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Track complaint real-time status | Complaint" plantUmlId="mb_9" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Track complaint real-time status | Complaint" id="9QU13PjBE_a7U-jY-gem-9">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="431.07" y="84.46999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Provide rating and feedback on resolution | Feedback" plantUmlId="mb_10" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Provide rating and feedback on resolution | Feedback" id="9QU13PjBE_a7U-jY-gem-10">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="431.07" y="100.95999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Reopen unresolved or poorly fixed issues | Complaint" plantUmlId="mb_11" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Reopen unresolved or poorly fixed issues | Complaint" id="9QU13PjBE_a7U-jY-gem-11">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="431.07" y="117.44999999999997" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="CRC Card: Complaint" plantUmlId="cls_12" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#FEFDE8;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Complaint" id="9QU13PjBE_a7U-jY-gem-12">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#FEFDE8;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="150.42999999999998" width="557.59" x="496.07" y="92.24" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="C" plantUmlId="ico_13" plantUmlBaseStyle="ellipse;fillColor=#D4AC0D;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-13">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="ellipse;fillColor=#D4AC0D;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+            <mxGeometry height="22" width="22" x="194.59980000000002" y="5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_14" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-14">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="557.59" y="27" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_15" plantUmlBaseStyle="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" plantUmlBaseValue="" id="9QU13PjBE_a7U-jY-gem-15">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="8" width="557.59" y="43.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Store issue details (category, photo, GPS, urgency) | Citizen" plantUmlId="mb_16" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Store issue details (category, photo, GPS, urgency) | Citizen" id="9QU13PjBE_a7U-jY-gem-16">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="557.59" y="51.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Store auto-assigned priority (P1-P4) &amp;amp; SLA deadline | System Rules Engine" plantUmlId="mb_17" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Store auto-assigned priority (P1-P4) &amp;amp; SLA deadline | System Rules Engine" id="9QU13PjBE_a7U-jY-gem-17">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="557.59" y="67.97999999999999" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Maintain status progression (Submitted -&amp;gt; Closed) | Dept Officer, Field Worker" plantUmlId="mb_18" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Maintain status progression (Submitted -&amp;gt; Closed) | Dept Officer, Field Worker" id="9QU13PjBE_a7U-jY-gem-18">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="557.59" y="84.46999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Record status change history with timestamps | Notification Service" plantUmlId="mb_19" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Record status change history with timestamps | Notification Service" id="9QU13PjBE_a7U-jY-gem-19">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="557.59" y="100.95999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Link assigned department and field technician | Department, Field Worker" plantUmlId="mb_20" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Link assigned department and field technician | Department, Field Worker" id="9QU13PjBE_a7U-jY-gem-20">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="557.59" y="117.44999999999997" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Store resolution proof photo | Field Worker" plantUmlId="mb_21" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Store resolution proof photo | Field Worker" id="9QU13PjBE_a7U-jY-gem-21">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="557.59" y="133.93999999999997" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="CRC Card: Department Officer" plantUmlId="cls_22" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#FDEDEC;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Department Officer" id="9QU13PjBE_a7U-jY-gem-22">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#FDEDEC;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="133.93999999999997" width="452.65" x="1088.66" y="92.245" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="C" plantUmlId="ico_23" plantUmlBaseStyle="ellipse;fillColor=#C0392B;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-23">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="ellipse;fillColor=#C0392B;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+            <mxGeometry height="22" width="22" x="111.621" y="5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_24" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-24">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="452.65" y="27" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_25" plantUmlBaseStyle="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" plantUmlBaseValue="" id="9QU13PjBE_a7U-jY-gem-25">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="8" width="452.65" y="43.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Review incoming queue sorted by priority (P1 first) | Complaint" plantUmlId="mb_26" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Review incoming queue sorted by priority (P1 first) | Complaint" id="9QU13PjBE_a7U-jY-gem-26">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="452.65" y="51.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Validate issue legitimacy and jurisdiction | Complaint" plantUmlId="mb_27" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Validate issue legitimacy and jurisdiction | Complaint" id="9QU13PjBE_a7U-jY-gem-27">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="452.65" y="67.97999999999999" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Assign field worker to complaint | Field Worker, Complaint" plantUmlId="mb_28" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Assign field worker to complaint | Field Worker, Complaint" id="9QU13PjBE_a7U-jY-gem-28">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="452.65" y="84.46999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Set expected resolution deadline within SLA | Complaint" plantUmlId="mb_29" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Set expected resolution deadline within SLA | Complaint" id="9QU13PjBE_a7U-jY-gem-29">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="452.65" y="100.95999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Identify and merge duplicate complaints | Complaint" plantUmlId="mb_30" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Identify and merge duplicate complaints | Complaint" id="9QU13PjBE_a7U-jY-gem-30">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="452.65" y="117.44999999999997" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="CRC Card: Field Worker" plantUmlId="cls_31" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#F4ECF7;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Field Worker" id="9QU13PjBE_a7U-jY-gem-31">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#F4ECF7;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="133.93999999999997" width="416.47" x="37.3" y="307.43" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="C" plantUmlId="ico_32" plantUmlBaseStyle="ellipse;fillColor=#8E44AD;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-32">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="ellipse;fillColor=#8E44AD;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+            <mxGeometry height="22" width="22" x="116.67060000000002" y="5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_33" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-33">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="416.47" y="27" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_34" plantUmlBaseStyle="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" plantUmlBaseValue="" id="9QU13PjBE_a7U-jY-gem-34">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="8" width="416.47" y="43.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• View assigned work orders ranked by priority | Complaint" plantUmlId="mb_35" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• View assigned work orders ranked by priority | Complaint" id="9QU13PjBE_a7U-jY-gem-35">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="416.47" y="51.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Navigate to physical issue location via GPS | Map Service" plantUmlId="mb_36" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Navigate to physical issue location via GPS | Map Service" id="9QU13PjBE_a7U-jY-gem-36">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="416.47" y="67.97999999999999" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Update task state to &quot;In Progress&quot; | Complaint" plantUmlId="mb_37" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Update task state to &quot;In Progress&quot; | Complaint" id="9QU13PjBE_a7U-jY-gem-37">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="416.47" y="84.46999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Upload &#39;After&#39; photo resolution proof | Complaint" plantUmlId="mb_38" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Upload &#39;After&#39; photo resolution proof | Complaint" id="9QU13PjBE_a7U-jY-gem-38">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="416.47" y="100.95999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Mark work order as &quot;Resolved&quot; | Complaint" plantUmlId="mb_39" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Mark work order as &quot;Resolved&quot; | Complaint" id="9QU13PjBE_a7U-jY-gem-39">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="416.47" y="117.44999999999997" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="CRC Card: Feedback" plantUmlId="cls_40" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#EAFAF1;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Feedback" id="9QU13PjBE_a7U-jY-gem-40">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#EAFAF1;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="133.93999999999997" width="516.38" x="1576.31" y="92.25" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="C" plantUmlId="ico_41" plantUmlBaseStyle="ellipse;fillColor=#27AE60;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-41">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="ellipse;fillColor=#27AE60;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+            <mxGeometry height="22" width="22" x="177.04705" y="5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_42" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-42">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="516.38" y="27" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="clssep_43" plantUmlBaseStyle="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" plantUmlBaseValue="" id="9QU13PjBE_a7U-jY-gem-43">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="line;strokeColor=#2C3E50;fillColor=none;align=left;verticalAlign=middle;rotatable=0;points=[];portConstraint=eastwest;connectable=0;strokeWidth=1;fontSize=11;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="8" width="516.38" y="43.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Store citizen rating score (1 to 5 stars) | Citizen, Complaint" plantUmlId="mb_44" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Store citizen rating score (1 to 5 stars) | Citizen, Complaint" id="9QU13PjBE_a7U-jY-gem-44">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="516.38" y="51.489999999999995" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Store critique and verification comments | Citizen" plantUmlId="mb_45" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Store critique and verification comments | Citizen" id="9QU13PjBE_a7U-jY-gem-45">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="516.38" y="67.97999999999999" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Trigger transition: Confirm resolution (Closed) | Complaint" plantUmlId="mb_46" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Trigger transition: Confirm resolution (Closed) | Complaint" id="9QU13PjBE_a7U-jY-gem-46">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="516.38" y="84.46999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Trigger transition: Dispute resolution (Reopened) | Complaint" plantUmlId="mb_47" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Trigger transition: Dispute resolution (Reopened) | Complaint" id="9QU13PjBE_a7U-jY-gem-47">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="516.38" y="100.95999999999998" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="• Feed satisfaction metrics into department KPIs | System Admin Analytics" plantUmlId="mb_48" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="• Feed satisfaction metrics into department KPIs | System Admin Analytics" id="9QU13PjBE_a7U-jY-gem-48">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="16.49" width="516.38" y="117.44999999999997" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

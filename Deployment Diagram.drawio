@@ -214,8 +214,8 @@
           </mxCell>
         </UserObject>
         <UserObject label="PostgreSQL with PostGIS&#xa;(Port 5432)" plantUmlId="n_32" plantUmlBaseStyle="shape=cylinder3;size=10;boundedLbl=1;backgroundOutline=1;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;rounded=1;arcSize=6;absoluteArcSize=1;shadow=0;" plantUmlBaseValue="PostgreSQL with PostGIS&#xa;(Port 5432)" id="d9_jSCQYjO2lgIQ7_E2L-34">
-          <mxCell parent="d9_jSCQYjO2lgIQ7_E2L-33" style="shape=cylinder3;size=10;boundedLbl=1;backgroundOutline=1;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;rounded=1;arcSize=6;absoluteArcSize=1;shadow=0;" vertex="1">
-            <mxGeometry height="46" width="178" x="15" y="40" as="geometry" />
+          <mxCell parent="d9_jSCQYjO2lgIQ7_E2L-33" style="shape=cylinder3;size=10;boundedLbl=1;backgroundOutline=1;fillColor=#F1F1F1;strokeColor=#181818;fontSize=13;whiteSpace=wrap;rounded=1;arcSize=6;absoluteArcSize=1;shadow=0;" vertex="1">
+            <mxGeometry height="72" width="224" x="15" y="30" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="In-Memory Cache" plantUmlId="c_33" plantUmlBaseStyle="shape=cube;size=10;flipH=1;fillColor=#F8F9F9;strokeColor=#34495E;verticalAlign=top;align=center;spacingTop=7;spacingRight=10;fontSize=14;fontStyle=1;whiteSpace=wrap;rounded=1;arcSize=6;absoluteArcSize=1;shadow=0;" plantUmlBaseValue="In-Memory Cache" id="d9_jSCQYjO2lgIQ7_E2L-35">
@@ -225,7 +225,7 @@
         </UserObject>
         <UserObject label="Redis Cache / Message Broker&#xa;(Port 6379)" plantUmlId="n_34" plantUmlBaseStyle="shape=cylinder3;size=10;boundedLbl=1;backgroundOutline=1;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;rounded=1;arcSize=6;absoluteArcSize=1;shadow=0;" plantUmlBaseValue="Redis Cache / Message Broker&#xa;(Port 6379)" id="d9_jSCQYjO2lgIQ7_E2L-36">
           <mxCell parent="d9_jSCQYjO2lgIQ7_E2L-35" style="shape=cylinder3;size=10;boundedLbl=1;backgroundOutline=1;fillColor=#F1F1F1;strokeColor=#181818;fontSize=14;whiteSpace=wrap;rounded=1;arcSize=6;absoluteArcSize=1;shadow=0;" vertex="1">
-            <mxGeometry height="46" width="224" x="15" y="40" as="geometry" />
+            <mxGeometry height="72" width="224" x="15" y="30" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="" plantUmlId="e_54" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="Internal HTTP (Port 3000)" id="d9_jSCQYjO2lgIQ7_E2L-56">
@@ -358,7 +358,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="HTTPS (Port 443)" plantUmlId="e_52" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="HTTPS (Port 443)" id="d9_jSCQYjO2lgIQ7_E2L-54">
+        <UserObject label="" plantUmlId="e_52" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="HTTPS (Port 443)" id="d9_jSCQYjO2lgIQ7_E2L-54">
           <mxCell edge="1" parent="d9_jSCQYjO2lgIQ7_E2L-1" source="d9_jSCQYjO2lgIQ7_E2L-7" style="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="d9_jSCQYjO2lgIQ7_E2L-14">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="59" y="-18" as="offset" />
@@ -375,7 +375,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="HTTPS REST API" plantUmlId="e_59" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="HTTPS REST API" id="d9_jSCQYjO2lgIQ7_E2L-61">
+        <UserObject label="" plantUmlId="e_59" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="HTTPS REST API" id="d9_jSCQYjO2lgIQ7_E2L-61">
           <mxCell edge="1" parent="d9_jSCQYjO2lgIQ7_E2L-1" source="d9_jSCQYjO2lgIQ7_E2L-20" style="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="d9_jSCQYjO2lgIQ7_E2L-39">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="-26" y="19" as="offset" />
@@ -395,7 +395,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="AWS SDK / TLS" plantUmlId="e_60" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="AWS SDK / TLS" id="d9_jSCQYjO2lgIQ7_E2L-62">
+        <UserObject label="" plantUmlId="e_60" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="AWS SDK / TLS" id="d9_jSCQYjO2lgIQ7_E2L-62">
           <mxCell edge="1" parent="d9_jSCQYjO2lgIQ7_E2L-1" source="d9_jSCQYjO2lgIQ7_E2L-20" style="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=1;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="d9_jSCQYjO2lgIQ7_E2L-44">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="157" y="28" as="offset" />
@@ -415,7 +415,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="HTTPS REST API" plantUmlId="e_61" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="HTTPS REST API" id="d9_jSCQYjO2lgIQ7_E2L-63">
+        <UserObject label="" plantUmlId="e_61" plantUmlBaseStyle="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="HTTPS REST API" id="d9_jSCQYjO2lgIQ7_E2L-63">
           <mxCell edge="1" parent="d9_jSCQYjO2lgIQ7_E2L-1" source="d9_jSCQYjO2lgIQ7_E2L-28" style="strokeColor=#181818;fontColor=#000000;fontSize=13;html=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;endArrow=none;curved=0;rounded=0;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="d9_jSCQYjO2lgIQ7_E2L-49">
             <mxGeometry relative="1" as="geometry">
               <mxPoint x="53" y="-3" as="offset" />

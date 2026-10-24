@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="hWWKOgkQUGns5Pwrqnfp">
-    <mxGraphModel dx="2037" dy="1045" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3246" dy="2410" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,21 +11,21 @@
         </UserObject>
         <UserObject label="&lt;font style=&quot;line-height: 130%; font-size: 24px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;FixMyStreet — Class-Responsibility-Collaborator (CRC) Cards&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" plantUmlId="cltitle_2" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;FixMyStreet — Class-Responsibility-Collaborator (CRC) Cards&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;" id="9QU13PjBE_a7U-jY-gem-2">
           <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Segoe UI;" vertex="1">
-            <mxGeometry height="71" width="890" x="710" y="50" as="geometry" />
+            <mxGeometry height="71" width="890" x="490" y="-60" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="CRC Card: Citizen" plantUmlId="cls_3" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#EBF5FB;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Citizen" id="9QU13PjBE_a7U-jY-gem-3">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=inherit;startSize=32;spacingLeft=25;fillColor=#EBF5FB;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
-            <mxGeometry height="158.45" width="431.07" x="130" y="190.49" as="geometry" />
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;startSize=32;spacingLeft=25;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="158.45" width="431.07" x="-90" y="80.49000000000001" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="C" plantUmlId="ico_4" plantUmlBaseStyle="ellipse;fillColor=#2980B9;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-4">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="ellipse;fillColor=#2980B9;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="ellipse;fontSize=13;fontStyle=1;movable=0;connectable=0;" vertex="1">
             <mxGeometry height="22" width="22" x="142.5336" y="5" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_5" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-5">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+        <UserObject label="&lt;b&gt;Responsibilities&lt;/b&gt; | &lt;b&gt;Collaborators&lt;/b&gt;" plantUmlId="mb_5" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#1A5276&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-5">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-3" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=light-dark(#1A5276,#FFFFFF);fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
             <mxGeometry height="41" width="431.07" y="27" as="geometry" />
           </mxCell>
         </UserObject>
@@ -59,18 +59,27 @@
             <mxGeometry height="16.49" width="431.07" y="141.95999999999998" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="tQymgnO04IOqwGEg49No-1" edge="1" parent="9QU13PjBE_a7U-jY-gem-1" source="9QU13PjBE_a7U-jY-gem-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="794.3" y="260" />
+              <mxPoint x="-260" y="260" />
+            </Array>
+            <mxPoint x="-260" y="1108.8288838154556" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <UserObject label="CRC Card: Complaint" plantUmlId="cls_12" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#FEFDE8;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Complaint" id="9QU13PjBE_a7U-jY-gem-12">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=light-dark(#FFFFFF, #f1e9e9);startSize=32;spacingLeft=25;fillColor=#FEFDE8;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
-            <mxGeometry height="168.94" width="557.59" x="596.0699999999999" y="182.24" as="geometry" />
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;startSize=32;spacingLeft=25;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;swimlaneFillColor=light-dark(#FFFFFF,#000000);" vertex="1">
+            <mxGeometry height="168.94" width="557.59" x="376.06999999999994" y="72.24000000000001" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="C" plantUmlId="ico_13" plantUmlBaseStyle="ellipse;fillColor=#D4AC0D;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-13">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="ellipse;fillColor=#D4AC0D;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="ellipse;fontSize=13;fontStyle=1;movable=0;connectable=0;" vertex="1">
             <mxGeometry height="22" width="22" x="194.59980000000002" y="5" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_14" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-14">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+        <UserObject label="&lt;b&gt;Responsibilities&lt;/b&gt; | &lt;b&gt;Collaborators&lt;/b&gt;" plantUmlId="mb_14" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#7D6608&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-14">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-12" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=light-dark(#7D6608,#FFFFFF);fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
             <mxGeometry height="36.99" width="557.59" y="27" as="geometry" />
           </mxCell>
         </UserObject>
@@ -110,17 +119,17 @@
           </mxCell>
         </UserObject>
         <UserObject label="CRC Card: Department Officer" plantUmlId="cls_22" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#FDEDEC;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Department Officer" id="9QU13PjBE_a7U-jY-gem-22">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=inherit;startSize=32;spacingLeft=25;fillColor=#FDEDEC;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
-            <mxGeometry height="159.69" width="452.65" x="1188.66" y="182.245" as="geometry" />
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;startSize=32;spacingLeft=25;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="159.69" width="452.65" x="968.6600000000001" y="72.245" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="C" plantUmlId="ico_23" plantUmlBaseStyle="ellipse;fillColor=#C0392B;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-23">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="ellipse;fillColor=#C0392B;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="ellipse;fontSize=13;fontStyle=1;movable=0;connectable=0;" vertex="1">
             <mxGeometry height="22" width="22" x="111.621" y="5" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_24" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-24">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+        <UserObject label="&lt;b&gt;Responsibilities&lt;/b&gt; | &lt;b&gt;Collaborators&lt;/b&gt;" plantUmlId="mb_24" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#78281F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-24">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=light-dark(#78281F,#FFFFFF);fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
             <mxGeometry height="34" width="452.65" y="27" as="geometry" />
           </mxCell>
         </UserObject>
@@ -155,17 +164,17 @@
           </mxCell>
         </UserObject>
         <UserObject label="CRC Card: Field Worker" plantUmlId="cls_31" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#F4ECF7;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Field Worker" id="9QU13PjBE_a7U-jY-gem-31">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=inherit;startSize=32;spacingLeft=25;fillColor=#F4ECF7;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
-            <mxGeometry height="147.95999999999998" width="416.47" x="137.3" y="397.43" as="geometry" />
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;startSize=32;spacingLeft=25;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="147.95999999999998" width="416.47" x="-82.69999999999999" y="287.43" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="C" plantUmlId="ico_32" plantUmlBaseStyle="ellipse;fillColor=#8E44AD;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-32">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="ellipse;fillColor=#8E44AD;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="ellipse;fontSize=13;fontStyle=1;movable=0;connectable=0;" vertex="1">
             <mxGeometry height="22" width="22" x="116.67060000000002" y="5" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_33" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-33">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+        <UserObject label="&lt;b&gt;Responsibilities&lt;/b&gt; | &lt;b&gt;Collaborators&lt;/b&gt;" plantUmlId="mb_33" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#512E5F&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-33">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-31" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=light-dark(#7D6608,#FFFFFF);fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
             <mxGeometry height="32.98" width="416.47" y="27" as="geometry" />
           </mxCell>
         </UserObject>
@@ -200,17 +209,17 @@
           </mxCell>
         </UserObject>
         <UserObject label="CRC Card: Feedback" plantUmlId="cls_40" plantUmlBaseStyle="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=#FFFFFF;startSize=32;spacingLeft=25;fillColor=#EAFAF1;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" plantUmlBaseValue="CRC Card: Feedback" id="9QU13PjBE_a7U-jY-gem-40">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;fontColor=inherit;startSize=32;spacingLeft=25;fillColor=#EAFAF1;strokeColor=#2C3E50;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
-            <mxGeometry height="152.45" width="516.38" x="1676.31" y="182.25" as="geometry" />
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-1" style="swimlane;collapsible=0;fontStyle=1;align=center;fontSize=12;startSize=32;spacingLeft=25;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;marginBottom=0;stackSpacing=0;marginTop=4;rounded=1;arcSize=8;absoluteArcSize=1;shadow=0;fontFamily=Segoe UI;" vertex="1">
+            <mxGeometry height="152.45" width="516.38" x="1456.31" y="72.25" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="C" plantUmlId="ico_41" plantUmlBaseStyle="ellipse;fillColor=#27AE60;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" plantUmlBaseValue="C" id="9QU13PjBE_a7U-jY-gem-41">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="ellipse;fillColor=#27AE60;strokeColor=#181818;fontSize=13;fontStyle=1;fontColor=#000000;movable=0;connectable=0;" vertex="1">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="ellipse;fontSize=13;fontStyle=1;movable=0;connectable=0;" vertex="1">
             <mxGeometry height="22" width="22" x="177.04705" y="5" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="&lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" plantUmlId="mb_42" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-42">
-          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
+        <UserObject label="&lt;b&gt;Responsibilities&lt;/b&gt; | &lt;b&gt;Collaborators&lt;/b&gt;" plantUmlId="mb_42" plantUmlBaseStyle="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=#000000;fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" plantUmlBaseValue="&lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Responsibilities&lt;/b&gt;&lt;/font&gt; | &lt;font color=&quot;#145A32&quot;&gt;&lt;b&gt;Collaborators&lt;/b&gt;&lt;/font&gt;" id="9QU13PjBE_a7U-jY-gem-42">
+          <mxCell parent="9QU13PjBE_a7U-jY-gem-40" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;rotatable=0;fillColor=none;strokeColor=none;fontSize=11;fontColor=light-dark(#145A32,#FFFFFF);fontStyle=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontFamily=Segoe UI;" vertex="1">
             <mxGeometry height="36.99" width="516.38" y="27" as="geometry" />
           </mxCell>
         </UserObject>
